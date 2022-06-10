@@ -1,0 +1,47 @@
+html,
+body {
+    margin: 0px;
+}
+
+body {
+    background-image: url("../assets/background.png");
+    background-size: 100%;
+    background-repeat: repeat;
+
+
+
+
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    z-index: 1000;
+    bottom: 20%;
+    margin-left: -80px;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 213, 0);
+    border: none;
+    color: blue;
+    font-size: 20em;
+    padding: 7px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 5px solid blue;
+}
+
+.respuesta {
+    z-index: 2000;
+    position: absolute;
+    font-size: 3em;
+    color: rgb(255, 213, 0);
+    text-shadow: -4px 0 blue, 0 4px blue, 4px 0 blue, 0 -4px blue;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 40%;
+
+
+
+}
