@@ -1,6 +1,8 @@
 <template>
+     <audio src="@/assets/pokemon-intro.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio>
   <h1 v-if="!pokemon">Espere por favor...</h1>
   <div v-else>
+
     <h1>¿Cuál es este Pokémon?</h1>
     <PokemonPicture
       :pokemonId="pokemon.id"
@@ -55,7 +57,7 @@ export default {
       this.showAnswer = true;
       if (selectedId === this.pokemon.id) {
         this.showOption = false;
-        this.message = `Correcto, ${this.pokemon.name}"`;
+        this.message = `Correcto, ${this.pokemon.name}`;
       } else {
         this.message = `Oops, era ${this.pokemon.name}`;
         this.showOption = false;
@@ -73,7 +75,9 @@ export default {
   },
   mounted() {
     this.mixPokemonArray();
+    document.getElementById("my_audio").play();
   },
+  
 };
 </script>
 <style>
